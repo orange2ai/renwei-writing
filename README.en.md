@@ -1,7 +1,9 @@
-# The Person Is Still There
+# Renwei · Human Flavor Writing
 
 [中文](README.md) | **English**
 
+> The person is still there.
+>
 > A skill for editing people's words without erasing the person behind them.
 
 This skill was born from a failure.
