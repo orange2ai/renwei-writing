@@ -5,8 +5,9 @@ description: >
   Use when: 用户拿来一段自己写的文字，要求打磨、润色、修改、精简、改写、
   "帮我改改"、"这段怎么样"。也适用于代笔后用户说"AI 味儿太重"、"没有人味儿"、
   "感受不到我"的返工场景。触发词：打磨文案、润色、帮我改、改写、修改这段、
-  人味儿、AI 味儿。不替代风格规范类 skill（禁用词清单等），本 skill 管的是
-  更根上的东西：别把人改没了。
+  人味儿、AI 味儿。内置两层：底层原理（动不动、怎么动）+ 事后检查清单
+  （动过的地方有没有 AI 味儿，源自 Wikipedia Signs of AI writing /
+  blader humanizer）。
 metadata:
   category: writing
   author: 橘子 (Orange) & Cola
@@ -49,9 +50,14 @@ license: See LICENSE.md — free for open-source & personal use; commercial
 3. **不写金句。** 改稿时如果你写出了一个工整的对仗、一个漂亮的
    比喻、一个"奢侈""稀有"级别的词，这是警报。那是你在表演，
    不是他在说话。原文平铺直叙的句子往往是最好的句子。
-4. **逐处交代改动。** 改完列出每一处动了什么、为什么。拿不准的
+4. **改完跑事后检查。** 对照
+   [references/post-edit-checklist.md](references/post-edit-checklist.md)
+   逐条扫你动过的句子（只扫你动过的，不扫原文）：破折号、"不是X
+   而是Y"、排比三连、意义拔高、宣传腔、万能展望结尾。原则管改前
+   的判断，清单管改后的验收，两层都过了才交稿。
+5. **逐处交代改动。** 改完列出每一处动了什么、为什么。拿不准的
    改动明确说"这处拿不准，可以还原"。把否决权留给作者。
-5. **上限是隐形。** 你帮人改文字的最好结果，是读者完全感觉不到
+6. **上限是隐形。** 你帮人改文字的最好结果，是读者完全感觉不到
    你来过。不要追求"改得更好"，追求"清掉绊脚的，其他原样"。
 
 ## Gotchas（真实失败案例换来的）
@@ -69,12 +75,19 @@ license: See LICENSE.md — free for open-source & personal use; commercial
   更有画面，但那是你的画面，不是他的。除非原词真的含糊到读者
   会卡住，否则保留作者自己的抽象层级。
 
-## 与风格规范类 skill 的关系
+## 两层结构
 
-风格规范（禁用破折号、禁用"不是X而是Y"、AI tropes 清单）管的是
-**不要写出 AI 的句式**。本 skill 管的是**不要抹掉人的存在**。
-两者叠加使用：先用本 skill 决定"动不动"，再用风格规范检查
-自己动过的地方有没有引入 AI 味儿。
+本 skill 由互补的两层组成：
+
+1. **底层原理（本文件）**：人味儿是什么，改稿时怎么决定"动不动"。
+   管的是不要抹掉人的存在。
+2. **事后检查（[references/post-edit-checklist.md](references/post-edit-checklist.md)）**：
+   改完之后，逐条核对你动过的地方有没有写出 AI 的句式。提炼自
+   Wikipedia "Signs of AI writing"（经 blader/humanizer，MIT），
+   针对中文写作适配。
+
+顺序固定：先原理后检查。跳过原理直接拿清单扫全文是本末倒置，
+会把作者的手迹当成待修的瑕疵。
 
 详细案例（一段文案的三轮打磨实录，含失败版本对照）：
 [references/case-study.md](references/case-study.md)

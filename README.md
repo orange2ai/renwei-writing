@@ -28,7 +28,10 @@
 
 ## 里面有什么
 
+两层结构：底层原理管改稿之前（这句该不该动），事后检查管改稿之后（动过的地方有没有 AI 味儿）。
+
 - **SKILL.md** — 人味儿的定义、操作规则、真实失败换来的 gotchas
+- **references/post-edit-checklist.md** — 事后检查清单：意义拔高、句式套路、格式痕迹、语气痕迹等六组中文适配的 AI 信号，含"不要误伤"与"人写的迹象"两节（提炼自 Wikipedia [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)，经 [blader/humanizer](https://github.com/blader/humanizer)，MIT）
 - **references/case-study.md** — 一段文案的三轮打磨实录，失败版本与被接受版本的逐条对照解剖
 
 ## 安装
@@ -41,9 +44,9 @@ git clone https://github.com/orange2ai/renwei-writing.git ~/.cola/skills/renwei-
 
 或将整个目录放入你的 agent 的 skills 路径。
 
-## 与风格规范类 skill 的关系
+## 与 humanizer 类 skill 的关系
 
-禁用词清单（破折号、"不是X而是Y"、AI tropes）管的是不要写出 AI 的句式。本 skill 管的是不要抹掉人的存在。先用本 skill 决定"动不动"，再用风格规范检查动过的地方。
+humanizer 类清单管的是不要写出 AI 的句式，是事后检查备忘；本 skill 的底层原理管的是不要抹掉人的存在，是动笔前的判断。两者已结合进本 skill：先原理后清单，检查范围只限你动过的句子。
 
 ## License
 

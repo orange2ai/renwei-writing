@@ -30,7 +30,10 @@ Renwei is not a writing technique. It is three things:
 
 ## What's inside
 
+Two complementary layers: first principles govern *before* the edit (should this sentence be touched at all); a post-edit checklist governs *after* (did your edits introduce AI patterns).
+
 - **SKILL.md** — the definition of renwei, operating rules, and gotchas earned from a real failure
+- **references/post-edit-checklist.md** — post-edit checklist: six groups of AI tells adapted for Chinese writing (significance inflation, sentence-pattern formulas, formatting tells, tone tells, etc.), plus "what NOT to flag" and "signs of human writing" sections. Distilled from Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) via [blader/humanizer](https://github.com/blader/humanizer) (MIT)
 - **references/case-study.md** — a full three-pass editing post-mortem: the failed version vs. the accepted version, dissected line by line
 
 ## Install
@@ -41,9 +44,9 @@ git clone https://github.com/orange2ai/renwei-writing.git ~/.cola/skills/renwei-
 
 Or drop the directory into your agent's skills path.
 
-## Relation to style-rule skills
+## Relation to humanizer-style skills
 
-Banned-phrase lists (em dashes, "it's not X, it's Y", AI tropes) prevent AI sentence patterns. This skill prevents erasing the human. Use this skill first to decide *whether* to touch a sentence; use style rules to check what you touched.
+Humanizer-style checklists prevent AI sentence patterns; they are post-edit reminders. This skill's first principles prevent erasing the human; they are pre-edit judgment. Both are now combined here: principles first, checklist after, and the checklist only scans the sentences you touched.
 
 ## License
 
