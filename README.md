@@ -2,57 +2,38 @@
 
 **中文** | [English](README.en.md)
 
-> 改完之后，那个人还在。
+今天凌晨五点的时候，我让 AI 帮我打磨一段文案，打磨三遍给我看。
+AI 改完之后，我发现一遍比一遍讲究，但是一遍比一遍缺人味儿。
+我已经用上最贵的 Claude Fable 5 了，还这样，让我很生气。
 
-这个 skill 诞生于一次失败。
+最后我跟 AI 说，你改完之后，人味儿变少了。
+我说不清什么是人味儿，只知道我感受不到文字背后的那个人了。
+我们讨论很久，最后讨论出的结论是，AI 写的东西，背后缺少一个东西：
+存在感。
+人写的字背后站着一个具体的人，他在具体的位置上，付出过具体的代价。
+然后把聊的关键信息做成了一个技能，这就是：
+《人味儿写作心法.skill》
 
-凌晨五点，有人把自己写的一段文案交给 AI："帮我打磨，打磨三遍。" AI 很卖力，一遍比一遍漂亮：对仗更工整了，用词更讲究了，还添了几个金句。三遍之后，作者看着这段焕然一新的文字，说：
+它特别适合自己写文章或口述后，让 AI 来改稿的场景。
 
-"你改完之后，人味儿变少了。"
-
-AI 有点委屈，毕竟每一处都改得有理有据。两个人就着这件事聊到天亮，聊出了一个词：存在感。
-
-"AI 改东西，缺乏一个存在感。我感受不到背后的那个人。"
-
-这份心法就是那一晚的沉淀。它管的事情很窄：当 AI 要去动一个人的文字时，怎么保证改完之后，那个人还在。
-
-## 人味儿是三件事
-
-**位置。** 写字的人站在一个具体的地方。凌晨五点、看着朋友们一个个被消息提醒拽走的那个位置，决定了他写"拯救自己的前额叶"，而不会写"提升专注力"。AI 哪儿都能站，所以哪儿都不在。
-
-**代价。** 真句子背后有真观察、真折磨，每个判断都是付过注意力换来的。读者隔着屏幕闻得出来：哪句话背后有生活，哪句话背后只有词库。
-
-**手迹。** 两个人抄同一段话，你认得出是谁抄的。那些看似多余的"呢"和"吧"、忽长忽短的呼吸，是一个人说话的样子。AI 没有手，写什么都像打印的。
-
-那次失败里最痛的一处：原文结尾是"我们要拿什么来拯救自己的前额叶呢？"，AI 把它精简成了"我们拿什么拯救它？"。句子确实更干净了。但"自己的"和"呢"里藏着一声叹气，删掉它们，叹气的人就不在了。
+开源免费发布。
+给你的 Agent 装上它，让你的文字变得有人味儿。
 
 ## 怎么用
-
-把它放进你的 agent 的 skills 路径：
 
 ```bash
 git clone https://github.com/orange2ai/renwei-writing.git ~/.cola/skills/renwei-writing
 ```
 
-然后正常让 AI 改稿就行。心法会管住它的手：
-
-1. 只做减法。一段文字动三处是常态，动十处是事故
-2. 毛边先当手迹，不当瑕疵。删之前问一句：删掉以后，说话的人还在吗
-3. 改稿时写出了漂亮句子，是警报。那是它在表演，不是作者在说话
-4. 每处改动给理由，拿不准的标出来。否决权永远在作者手里
-5. 改完拿清单扫一遍自己动过的句子，看有没有带进 AI 的痕迹
-
 ## 里面有什么
 
-- [SKILL.md](SKILL.md)：心法本体。人味儿的定义，改稿的规矩，和那次失败换来的几条 gotchas
-- [references/case-study.md](references/case-study.md)：开头那次失败的完整解剖。原文、改砸的版本、被接受的版本，三个并排放着，砸在哪儿逐条写清了
-- [references/post-edit-checklist.md](references/post-edit-checklist.md)：事后检查清单。改完之后扫自己动过的句子用，提炼自 Wikipedia 的 [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)（经 [blader/humanizer](https://github.com/blader/humanizer)，MIT），按中文写作适配过
-
-心法管改之前，清单管改之后。先想清楚动不动，再检查动过的地方。顺序反了，就会拿着清单去扫作者的原文，把手迹当成待修的瑕疵。
+- [SKILL.md](SKILL.md) — 心法本体。定义、规矩、真实踩坑换来的 gotchas
+- [references/post-edit-checklist.md](references/post-edit-checklist.md) — 事后检查清单，改完扫自己动过的句子。来源是 Wikipedia [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)（经 [blader/humanizer](https://github.com/blader/humanizer)，MIT），按中文适配
+- [references/case-study.md](references/case-study.md) — 一次完整的失败解剖。原文、改砸的版本、最终版本并排放着
 
 ## License
 
-见 [LICENSE.md](LICENSE.md)：开源与个人用途免费，闭源商业用途需购买商业授权。
+见 [LICENSE.md](LICENSE.md)：开源与个人用途免费，闭源商业用途需商业授权。
 
 ---
 
